@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="CENTER" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HostAddController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="500.0" prefWidth="300.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/connectionIcon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin></ImageView>
+               </children>
+            </HBox>
+            <TextField fx:id="hostName" prefHeight="40.0" promptText="主机名">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="IPArr" prefHeight="40.0" promptText="IP地址">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="port" prefHeight="40.0" promptText="端口号(默认22端口)">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="userName" prefHeight="40.0" promptText="用户名">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin></TextField>
+            <PasswordField fx:id="userPassword" prefHeight="40.0" promptText="密码">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin></PasswordField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="connectBtn" mnemonicParsing="false" onAction="#connectBtnClick" prefHeight="40.0" prefWidth="100.0" text="连接">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="hostAddClearBtn" mnemonicParsing="false" onAction="#onHostAddClear" prefHeight="40.0" prefWidth="100.0" text="取消">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

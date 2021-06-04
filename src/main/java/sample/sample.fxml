@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:id="body" alignment="center" prefHeight="840.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <VBox prefHeight="840.0" prefWidth="1500.0">
+            <children>
+                <HBox prefHeight="10.0" prefWidth="1500.0">
+                    <children>
+                        <Button fx:id="preIcon" mnemonicParsing="false" />
+                        <Button fx:id="nextIcon" mnemonicParsing="false" />
+                  <ComboBox fx:id="comboBoxSystemPartition" prefWidth="115.0" promptText="C:\" />
+                        <TextField fx:id="sreach" prefWidth="1105.0" promptText="请输入搜索路径" />
+                  <Button fx:id="hostAddBtn" mnemonicParsing="false" onAction="#hostAddBtnClick" />
+                  <Button fx:id="adminHosts" mnemonicParsing="false" onAction="#adminHostBtnClick" />
+                        <Button fx:id="bookMark" mnemonicParsing="false" />
+                        <Button fx:id="olyFolder" mnemonicParsing="false" />
+                        <Button fx:id="refresh" mnemonicParsing="false" onAction="#fileSystemRefresh" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="835.0" prefWidth="1500.0">
+                    <children>
+                        <TableView fx:id="tableView" prefHeight="500.0" prefWidth="730.0" GridPane.columnIndex="2">
+                            <columns>
+                                <TableColumn fx:id="fileName" prefWidth="340.0" text="文件名" />
+                                <TableColumn fx:id="fileDate" prefWidth="170.0" text="日期" />
+                                <TableColumn fx:id="fileSize" prefWidth="150.0" text="文件大小" />
+                            </columns>
+                        </TableView>
+                  <TableView fx:id="linuxTableView" prefHeight="500.0" prefWidth="800.0">
+                    <columns>
+                      <TableColumn fx:id="linuxFileName" prefWidth="200.0" text="文件名" />
+                        <TableColumn fx:id="linuxFileAttr" prefWidth="110.0" text="属性" />
+                        <TableColumn fx:id="linuxFileType" prefWidth="75.0" text="类型" />
+                      <TableColumn fx:id="linuxFileDate" prefWidth="140.0" text="日期" />
+                        <TableColumn fx:id="linuxFileSize" prefWidth="130.0" text="文件大小" />
+                        <TableColumn fx:id="linuxFileOwner" prefWidth="75.0" text="所有者" />
+                    </columns>
+                  </TableView>
+                    </children>
+                </HBox>
+                <HBox prefHeight="50.0" prefWidth="1440.0">
+                    <children>
+                        <Label fx:id="UPfileName" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefWidth="420.0">
+                            <HBox.margin>
+                                <Insets left="20.0" right="20.0" top="5.0" />
+                            </HBox.margin></Label>
+                        <ProgressBar fx:id="progressBar" prefWidth="1200.0" progress="0.0">
+                            <HBox.margin>
+                                <Insets right="20.0" top="9.0" />
+                            </HBox.margin></ProgressBar>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</GridPane>

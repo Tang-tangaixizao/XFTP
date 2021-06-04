@@ -1,0 +1,221 @@
+#root {
+    -fx-background-color: rgba(16, 16, 16, 0.85);
+}
+#top {
+    -fx-background-color: rgba(0, 0, 0, 0.45);
+}
+#fileListView{
+    -fx-background-color: rgba(16, 16, 16, 0.1);
+    -fx-border-color: #3c3e44;
+    -fx-font-family:"Microsoft YaHei";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+#olyFolder{
+    -fx-background-image: url("../Folder.png");
+    -fx-background-position: center;
+    -fx-background-size: 35px;
+    -fx-background-repeat: no-repeat;
+    -fx-min-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-color: transparent;
+}
+#olyFolder:pressed{
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(112, 128, 144, 0.9);
+}
+#refresh{
+    -fx-background-image: url("../Refresh.png");
+    -fx-background-position: center;
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-min-width: 40px;
+    -fx-max-height: 40px;
+}
+#refresh:pressed{
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(112, 128, 144, 0.9);
+}
+.list-cell:hover{
+    -fx-background-color: rgba(211, 236, 255, 0.95);
+}
+.list-cell:selected{
+    -fx-background-color: rgba(211, 236, 255, 0.9);
+}
+#sreach{
+    -fx-background-radius: 20px;
+    -fx-background-color: transparent;
+    -fx-border-radius: 20px;
+    -fx-background-image: url("../computer.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 8px center;
+    -fx-background-size: 30px;
+    -fx-padding: 5px 40px;
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: whitesmoke;
+}
+#sreach:focused{
+    -fx-border-color: #2e86de;
+}
+#bookMark{
+    -fx-min-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-image: url("../book-mark-fill.png");
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#preIcon{
+    -fx-background-color: transparent;
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-min-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-image: url("../箭头左.png");
+}
+#nextIcon{
+    -fx-background-color: transparent;
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-min-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-image: url("../箭头.png");
+}
+#nextIcon:pressed{
+    -fx-background-color: rgba(112, 128, 144, 0.9);
+    -fx-background-radius: 10px;
+}
+#preIcon:pressed{
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(112, 128, 144, 0.9);
+}
+#bookMark:pressed{
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(112, 128, 144, 0.9);
+}
+#hostAddBtn{
+    -fx-background-color: transparent;
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-min-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-image: url("../add.png");
+}
+#hostAddBtn:pressed{
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(112, 128, 144, 0.9);
+}
+#adminHosts{
+    -fx-background-color: transparent;
+    -fx-background-size: 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-min-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-image: url("../集群管理.png");
+}
+#adminHosts:pressed{
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(112, 128, 144, 0.9);
+}
+#winClose{
+    -fx-background-image:url('../close.png');
+    -fx-background-size: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-cursor:hand;
+}
+#winMax{
+    -fx-background-image: url("../max2.png");
+    -fx-background-size: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-cursor:hand;
+}
+#winMin{
+    -fx-background-image: url("../min1.png");
+    -fx-background-size: 20px;
+    -fx-background-repeat:no-repeat;
+    -fx-cursor:hand;
+}
+#winClose:hover {
+    -fx-background-image:url("../close_red.png");
+}
+#winTitleText{
+    -fx-text-fill: #f7f1e3;
+    -fx-font-size: 18px;
+}
+#winIcon{
+    -fx-background-image:url("../logo-cat.png");
+    -fx-background-size: 25px;
+    -fx-background-repeat:no-repeat;
+}
+#UPfileName{
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-text-fill: aliceblue;
+    -fx-font-size:18px;
+}
+.progress-bar {
+    -fx-indeterminate-bar-length: 60;
+    -fx-indeterminate-bar-escape: true;
+    -fx-indeterminate-bar-flip: true;
+    -fx-indeterminate-bar-animation-time: 2;
+    -fx-border-color: #3867d6;
+    -fx-border-radius: 5px;
+}
+/*进度条颜色*/
+.progress-bar > .bar {
+    -fx-background-color: #3867d6;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px;
+    -fx-padding: 0.3em;
+}
+.progress-bar:indeterminate > .bar {
+    -fx-background-color: linear-gradient(to left, transparent, -fx-accent);
+}
+/*背景*/
+.progress-bar > .track {
+    -fx-background-color:rgba(0, 0, 0, 0.45);
+    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1;
+    -fx-background-radius: 4, 3, 2;
+}
+.table-view .column-header .label{
+    -fx-background-color: none;
+    -fx-alignment: center;
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-text-fill: rgba(68,68,68,0.96);
+}
+.table-row-cell{
+    -fx-cell-size: 35px;
+    -fx-alignment: center;
+    -fx-background-color: none;
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.table-row-cell:hover{
+    -fx-background-color: rgba(142, 177, 250, 0.5);
+}
+.table-row-cell:selected{
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-text-fill: #000000;
+    -fx-background-color: rgba(142, 177, 250, 0.9);
+}
+.table-view .table-column{
+    -fx-alignment: center-left;
+    -fx-border-color: transparent;
+}
+.combo-box-base {
+    -fx-background-color: transparent;
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-weight: bold;
+}
+#LoadingText{
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-size: 18px;
+}

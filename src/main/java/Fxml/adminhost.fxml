@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<GridPane alignment="CENTER" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminHostController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TableView fx:id="adminHostList" prefHeight="600.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="hostNameList" prefWidth="330.0" text="主机列表" />
+          <TableColumn fx:id="hostNameEdit" prefWidth="125.0" />
+          <TableColumn fx:id="hostNameDel" prefWidth="125.0" />
+        </columns>
+      </TableView>
+   </children>
+</GridPane>
